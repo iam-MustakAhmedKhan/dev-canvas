@@ -5,7 +5,7 @@
     "icon": "https://i.ibb.co/4p7ZhKV/webdevelopment.png",
     "content": [
         {
-            "title": "Icons8",
+            "name": "Icons8",
             "slug": "icons8",
             "logo": "https://i.ibb.co/9rYgrRJ/icons8.png",
             "link": "https://icons8.com/",
@@ -14,7 +14,7 @@
             "subCategory": "icon"
         },
         {
-            "title": "Font Awesome",
+            "name": "Font Awesome",
             "slug": "font-awesome",
             "logo": "https://i.ibb.co/02sNqsn/fontawesome.png",
             "link": "https://fontawesome.com/",
