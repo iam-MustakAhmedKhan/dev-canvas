@@ -1,16 +1,16 @@
 
 // "use client"
-import { getAlldata, getSingleData } from '../utils';
+
+import { Header } from "@/components/Header";
+
+
+
 export default function Home() {
-
-
-  const data = getAlldata();
-  const singleData = getSingleData('web-design')
-  console.log(singleData)
 
   return (
     <div>
-      Hello
+     <Header/>
+  
     </div>
   );
 }
