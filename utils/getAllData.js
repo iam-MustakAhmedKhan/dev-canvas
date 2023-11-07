@@ -1,5 +1,8 @@
+"use server"
 const path = require('path');
 const fs = require('fs');
+
+
 
 export const getAlldata = () => {
     const pathName = path.resolve(__dirname, '../../../../data');
