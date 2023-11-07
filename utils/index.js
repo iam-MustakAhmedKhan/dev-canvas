@@ -1,2 +1,3 @@
 export * from './getAllData';
-export * from './getSingleData'
+export * from './getSingleData';
+export * from './organizeData';

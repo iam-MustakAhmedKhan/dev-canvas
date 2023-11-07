@@ -1,8 +1,12 @@
+import HomeItems from '@/components/HomeItems';
+import Items from '@/components/Items';
 import React from 'react'
 
 const ItemPage = () => {
   return (
-    <div>InnderItemPage</div>
+    <div>
+      <Items/>
+    </div>
   )
 }
 

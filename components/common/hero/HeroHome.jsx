@@ -1,17 +1,20 @@
+
+
 import Contributors from "@/components/Contributors";
 import { Description, SearchBox, SelectInput } from "..";
 
 
-const HeroHome = ({ contributors }) => {
+const HeroHome = ({ contributors, title, description, icon }) => {
   return (
     <main className="py-[136px]">
       <div className="flex flex-col items-center justify-center">
         <Description
-          title="Fueling Creative Minds."
-          description="From Novice to Pro: Tailored Resources for Every Skill Level."
+          title={title}
+          description={description}
+          icon={icon}
 
         />
-        {contributors ? <Contributors Contributors={contributors}/>
+        {contributors ? <Contributors contributors={contributors} />
           :
           <>
             <div className="flex items-center gap-3 py-8">

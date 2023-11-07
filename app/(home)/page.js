@@ -7,7 +7,10 @@ export default function Home() {
 
   return (
     <div>
-      <HeroHome />
+      <HeroHome
+        title="Fueling Creative Minds."
+        description="From Novice to Pro: Tailored Resources for Every Skill Level."
+      />
       <Contents />
     </div>
   );

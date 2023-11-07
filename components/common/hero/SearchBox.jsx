@@ -12,7 +12,7 @@ const SearchBox = () => {
         <Input placeholder="Search" className="border-none focus-visible:ring-0 focus-visible:ring-offset-0" />
       </div>
 
-      <div className='absolute left-0 w-full bg-[#e8e8e8] px-3 py-4 rounded-b-[6px]'>
+      <div className='absolute left-0 w-full bg-[#e8e8e8] px-3 py-4 rounded-b-[6px] z-30'>
         <SearchItems />
       </div>
     </div>

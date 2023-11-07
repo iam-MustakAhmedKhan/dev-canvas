@@ -20,7 +20,7 @@ export const getAlldata = () => {
 
 
 export const getAllDataPromise = () => {
-    const pathName = path.resolve(__dirname, '../../../../data');
+    const pathName = path.resolve(path.join('./data'));
 
     return new Promise((resolve, reject) => {
         fs.readdir(pathName, 'utf8', (err, data) => {
