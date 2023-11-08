@@ -30,7 +30,7 @@ const Header = () => {
               </span>
             </Link>
               :
-              <Link href="https://google.com" target='_blank' rel='noopener noreferrer'>
+              <Link href="https://github.com/iam-MustakAhmedKhan/dev-canvas" target='_blank' rel='noopener noreferrer'>
                 <Github />
                 <span className='ml-2'>
                   Contribute
