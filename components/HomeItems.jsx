@@ -1,16 +1,12 @@
 "use client";
-import React from 'react';
-import { Header } from './Header';
 
 import { useParams } from 'next/navigation';
 import CardItems from './CardItems';
 import { getSingleData } from '@/utils';
-import Footer from './Footer';
 import { HeroHome } from './common/hero/HeroHome';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import useStore from '@/state/store';
 import { getSubcategory } from '@/utils/getSubcategory';
-import { useAllData } from '@/hooks/useAllData';
 
 const HomeItems = () => {
 

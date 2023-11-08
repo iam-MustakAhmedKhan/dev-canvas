@@ -1,15 +1,13 @@
 "use client"
 import React from 'react';
-
-import { Button } from './ui/button';
-import { Github } from 'lucide-react';
-import { Star } from 'lucide-react';
-import { FileEdit } from 'lucide-react';
-
-import Link from 'next/link';
-import { useParams } from 'next/navigation';
-import { ModeToggle } from './common/ThemeToggle';
 import { Logo } from './common/Logo';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { FileEdit, Github, Star } from 'lucide-react';
+import { ModeToggle } from './common/ThemeToggle';
+import { useParams } from 'next/navigation';
+
+
 
 const Header = () => {
 

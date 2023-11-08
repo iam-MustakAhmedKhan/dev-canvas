@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Copy } from 'lucide-react';
-import { Button } from "./ui/button";
+
 import Link from "next/link";
 import { ExternalLink } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 
 const SingleItem = ({name,logo,link,description,category,subCategory}) => {

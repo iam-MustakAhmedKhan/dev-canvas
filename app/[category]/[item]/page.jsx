@@ -1,6 +1,5 @@
-import HomeItems from '@/components/HomeItems';
-import Items from '@/components/Items';
-import React from 'react'
+import Items from "@/components/Items";
+
 
 const ItemPage = () => {
   return (

@@ -3,21 +3,10 @@ import React from 'react';
 
 import { Maximize } from 'lucide-react';
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { sort } from '@/utils/sort';
 import { Card } from '../Card';
-import { getSubcategory } from '@/utils/getSubcategory';
-import useStore from '@/state/store';
 
 
 const Content = ({ data }) => {
