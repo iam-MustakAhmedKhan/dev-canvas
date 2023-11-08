@@ -1,6 +1,6 @@
 import { Separator } from '@/components/ui/separator';
 import React from 'react';
-import { Card } from '..';
+
 import { Maximize } from 'lucide-react';
 
 import {
@@ -15,14 +15,20 @@ import {
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { sort } from '@/utils/sort';
+import { Card } from '../Card';
+import { getSubcategory } from '@/utils/getSubcategory';
+import useStore from '@/state/store';
 
 
 const Content = ({ data }) => {
 
 
+
   const { title, slug, content } = data;
 
   const contents = sort(content);
+
+
 
   return (
     <div className='flex-1 h-[704px] rounded-[8px] border-2 dark:border-[#ffffff] overflow-y-auto'>
@@ -30,24 +36,12 @@ const Content = ({ data }) => {
         <div className='flex items-center justify-between'>
           <h1 className='font-bold text-[24px]'>{title}</h1>
           <div className='flex items-center gap-2'>
-            <Select>
-              <SelectTrigger className="w-[180px] focus:ring-0 focus:ring-offset-0">
-                <SelectValue placeholder="All" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectItem value="All">All</SelectItem>
-                  <SelectItem value="banana">Web Development</SelectItem>
-                  <SelectItem value="blueberry">Ui/UX</SelectItem>
-                  <SelectItem value="grapes">Web Design</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-            <Button variant="ghost" asChild>
-              <Link href={slug}>
+
+            <Link href={slug}>
+              <Button variant="ghost" aria-label="maximize" >
                 <Maximize />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
 
           </div>
         </div>

@@ -1,3 +1,4 @@
+"use client"
 import {
     Select,
     SelectContent,
@@ -7,18 +8,31 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { useAllData } from "@/hooks/useAllData";
+import useStore from "@/state/store";
 const SelectInput = () => {
+
+    const setFilterValue = useStore((state) => state.setFilterValue)
+    const allData=useAllData()
+
+    
+    const handleSelect = (value) => {
+        setFilterValue(value)
+    }
+    
   return (
-      <Select>
-          <SelectTrigger className="w-[180px] focus:ring-0 focus:ring-offset-0">
+      <Select onValueChange={(value) => handleSelect(value)} >
+          <SelectTrigger aria-label="Select" className="w-[180px] focus:ring-0 focus:ring-offset-0">
               <SelectValue placeholder="All" />
           </SelectTrigger>
           <SelectContent>
               <SelectGroup>
                   <SelectItem value="All">All</SelectItem>
-                  <SelectItem value="banana">Web Development</SelectItem>
-                  <SelectItem value="blueberry">Ui/UX</SelectItem>
-                  <SelectItem value="grapes">Web Design</SelectItem>
+                  {
+                      allData.map((data,i) => (
+                          <SelectItem key={i} value={data.title}>{data.title}</SelectItem>
+                      ))
+                  }
               </SelectGroup>
           </SelectContent>
       </Select>

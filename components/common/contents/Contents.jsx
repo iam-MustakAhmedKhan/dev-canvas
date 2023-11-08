@@ -1,14 +1,13 @@
-
+"use client";
 
 import React from 'react';
 import Content from './Content';
-import { getAllDataPromise } from '@/utils';
+import { useAllData } from '@/hooks/useAllData';
 
 
-const Contents = async () => {
+const Contents = () => {
 
-  const allData = await getAllDataPromise();
-
+  const allData = useAllData();
 
   return (
     <div className='grid grid-cols-2 items-center gap-10 py-12'>

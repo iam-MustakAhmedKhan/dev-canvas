@@ -1,9 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-const Similar = () => {
+import { getSimilarItems } from '@/utils';
+import { Card } from './common/Card';
+
+const Similar = ({ filename, subCategory,name }) => {
+
+  const data = getSimilarItems(filename, subCategory,name);
+
+
   return (
-    <div className='flex-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis dolor repellat ipsa, praesentium recusandae adipisci similique aliquid nostrum officiis sapiente aut consequuntur incidunt iure obcaecati laudantium nobis. Tempora quo possimus repudiandae, necessitatibus eos voluptate sit molestias quas dicta tenetur esse libero animi sapiente vitae neque, aut quasi, veritatis expedita! Vero cumque perferendis porro, minus illo nulla corrupti similique illum deserunt quia, repellat iusto voluptates dicta accusantium debitis odit assumenda deleniti sit saepe aliquam veritatis excepturi? Repudiandae ex velit adipisci ut deserunt corrupti exercitationem natus minima autem in qui totam ea ad ratione tenetur esse odit iure mollitia voluptatum aperiam doloribus, quibusdam, nesciunt eveniet! Possimus suscipit, pariatur minus rerum odio quo blanditiis reiciendis consectetur incidunt unde quos error distinctio asperiores qui nulla, amet, eveniet maiores. Eaque, sequi facere vel iusto natus temporibus repellat et, autem sit tenetur quisquam exercitationem inventore ut quam atque totam recusandae non vitae cum consequatur nihil possimus at. Alias neque, quis beatae soluta ea aut recusandae facere aliquid molestias! In reiciendis quo deleniti velit rem sit debitis illo suscipit dolorem officia maxime quos, dolore incidunt, dolores aliquam eum impedit ducimus provident non saepe recusandae exercitationem vel, numquam inventore. Numquam et officiis recusandae, alias harum expedita similique nisi eveniet quidem accusantium, cumque in natus voluptatibus. Molestias doloremque dolores earum quasi quis ullam maiores quidem magni laboriosam. Distinctio eligendi asperiores in laborum, magnam molestias! Fuga earum incidunt vitae ratione non explicabo obcaecati ipsam deleniti accusamus provident saepe, modi numquam quo odit dignissimos amet nulla reiciendis repellat aperiam natus ad repudiandae corrupti repellendus. Nostrum et voluptas accusantium quam inventore, ab totam odio autem, fugit, enim voluptatum soluta architecto nihil quidem ducimus. Veritatis provident, eos ad officia minima porro error maxime aliquam? Maxime, cupiditate laborum odit quibusdam fuga dolores dolorum deleniti nobis at porro blanditiis ratione vitae neque quo? Quasi blanditiis alias ab praesentium est exercitationem nulla perspiciatis adipisci veritatis numquam, culpa aliquid, laudantium quis. Numquam corrupti non nam vitae eius ratione eos obcaecati pariatur blanditiis eum atque, cumque vel, debitis recusandae minus, modi perferendis cupiditate eveniet nihil esse incidunt tenetur in culpa. Asperiores voluptas, error cupiditate recusandae nulla consequuntur tenetur. Nemo tempore illum cupiditate nesciunt neque hic nam nulla, laudantium, tempora facere perferendis deleniti quam, adipisci delectus? At ipsam cupiditate unde aut corporis. Repellendus quasi vel numquam. Ratione excepturi exercitationem ducimus quis. Vel perferendis non accusamus adipisci unde corporis, libero fugit. Facere, dolorum a? Libero placeat sit itaque sint.</div>
-  )
-}
+    <div className='flex-1'>
 
-export default Similar
+      <h1 className='text-[32px] font-semibold mb-[32px]'>Similar Resources</h1>
+
+      <div className='flex flex-col gap-2'>
+        {
+          data.map((d,i) => (
+            <Card key={i} data={d}/>
+          ))
+        }
+      </div>
+
+
+    </div>
+  );
+};
+
+export default Similar;

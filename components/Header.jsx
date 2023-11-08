@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Logo, ModeToggle } from './common';
+
 import { Button } from './ui/button';
 import { Github } from 'lucide-react';
 import { Star } from 'lucide-react';
@@ -8,6 +8,8 @@ import { FileEdit } from 'lucide-react';
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { ModeToggle } from './common/ThemeToggle';
+import { Logo } from './common/Logo';
 
 const Header = () => {
 

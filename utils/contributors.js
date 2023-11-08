@@ -1,7 +1,12 @@
 import axios from "axios";
 
+
 export const contributor = async (filename) => {
-    const {data} = await axios.get(`https://api.github.com/repos/iam-MustakAhmedKhan/dev-canvas/commits?path=data/${filename}.json`);
+    const { data } = await axios.get(`https://api.github.com/repos/iam-MustakAhmedKhan/dev-canvas/commits?path=data/${filename}.json`, {
+        headers: {
+            'Authorization':`${process.env.GITHUB_TOKEN}`
+        }
+    });
     const charMap = {};
 
 
@@ -22,5 +27,6 @@ export const contributor = async (filename) => {
         }
     });
 
+    
     return charMap;
 };

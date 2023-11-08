@@ -1,10 +1,11 @@
 "use client"
 import React from 'react';
-import { HeroHome } from './common';
+
 import { useParams } from 'next/navigation';
 import { getSingleData } from '@/utils';
 import SingleItem from './SingleItem';
 import Similar from './Similar';
+import { HeroHome } from './common/hero/HeroHome';
 
 const Items = () => {
 
@@ -36,7 +37,12 @@ const Items = () => {
                   description={description}
                   
               />
-              <Similar/>
+              <Similar
+                  filename={category}
+                  subCategory={subCategory}
+                  name={name}
+              
+              />
           </div>
 
     </div>

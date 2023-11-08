@@ -1,7 +1,10 @@
 
 
 import Contributors from "@/components/Contributors";
-import { Description, SearchBox, SelectInput } from "..";
+
+import { SearchBox } from "./SearchBox";
+import { Description } from "../Description";
+import { SelectInput } from "../SelectInput";
 
 
 const HeroHome = ({ contributors, title, description, icon }) => {
@@ -12,7 +15,7 @@ const HeroHome = ({ contributors, title, description, icon }) => {
           title={title}
           description={description}
           icon={icon}
-
+          
         />
         {contributors ? <Contributors contributors={contributors} />
           :
@@ -21,7 +24,7 @@ const HeroHome = ({ contributors, title, description, icon }) => {
               <SearchBox />
               <SelectInput />
             </div>
-            <h3 className="font-bold">Trending: <span className="font-normal">Javascipt,React js,Linkedin</span></h3>
+            <h1 className="font-bold">Trending: <span className="font-normal">Javascipt,React js,Linkedin</span></h1>
           </>}
       </div>
     </main>

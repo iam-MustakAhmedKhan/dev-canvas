@@ -1,5 +1,6 @@
+import { Contents } from "@/components/common/contents/Contents";
+import { HeroHome } from "@/components/common/hero/HeroHome";
 
-import { Contents, HeroHome } from "@/components/common";
 
 
 
