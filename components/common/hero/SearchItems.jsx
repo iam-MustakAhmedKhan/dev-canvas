@@ -35,7 +35,7 @@ const SearchItems = () => {
     let metchdata = [];
     let route;
 
-    allData?.filter(categoryFilter).forEach(mainData => {
+    allData.filter(categoryFilter).forEach(mainData => {
         route = mainData.slug;
         mainData.content.filter(SearchFilter).forEach((data, i) => {
             metchdata.push(data);
