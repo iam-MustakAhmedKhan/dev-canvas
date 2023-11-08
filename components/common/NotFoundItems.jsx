@@ -5,7 +5,7 @@ import { Github } from 'lucide-react';
 
 
 
-const NotFound = () => {
+const NotFoundItems = () => {
     const searchValue = useStore((state) => state.searchValue)
   return (
       <div className="flex items-center justify-between">
@@ -20,4 +20,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default NotFoundItems;

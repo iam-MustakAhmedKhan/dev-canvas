@@ -3,7 +3,7 @@ import React from 'react';
 import useStore from '@/state/store';
 import { useAllData } from '@/hooks/useAllData';
 import { Card } from '../Card';
-import NotFound from '../NotFound';
+import NotFoundItems from '../NotFoundItems';
 
 const SearchItems = () => {
     const filterValue = useStore((state) => state.filterValue);
@@ -49,7 +49,7 @@ const SearchItems = () => {
             <Card key={i} data={data} parentRoute={route} />
         ));
     } else {
-        content = <NotFound/>;
+        content = <NotFoundItems />;
     }
 
 
