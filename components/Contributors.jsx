@@ -27,7 +27,7 @@ const Contributors = ({ contributors }) => {
             <h1 className='font-bold py-2'>Contributor&apos;s</h1>
             <div className='flex items-center justify-center gap-2'>
                 {
-                    allData.map((data, i) => (
+                    allData?.map((data, i) => (
                         <Link key={i} href={contri[data].html_url} target='_blank' rel='noopener nofollow'>
                             <div className='border p-1 items-center flex justify-center rounded-md w-[50px] h-[50px]'>
                                 <Image width={50} height={50} src={contri[data].avatar_url} alt={contri[data].name} title={`${contri[data].name} - ${contri[data].count} Contributes`} />

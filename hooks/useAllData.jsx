@@ -1,4 +1,4 @@
-
+"use client"
 import { getAllDataPromise } from '@/utils';
 import { useEffect } from 'react';
 import { useCallback } from 'react';

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from 'react';
 import Content from './Content';
@@ -7,12 +7,13 @@ import { useAllData } from '@/hooks/useAllData';
 
 const Contents = () => {
 
-  const allData = useAllData();
+  const allData = useAllData()
+  console.log(allData)
 
   return (
     <div className='grid grid-cols-2 items-center gap-10 py-12'>
 
-      {allData.map(data => (
+      {allData?.map(data => (
         <Content key={data.id} data={data} />
       ))}
     </div>

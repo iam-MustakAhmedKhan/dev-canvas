@@ -29,7 +29,7 @@ const SelectInput = () => {
               <SelectGroup>
                   <SelectItem value="All">All</SelectItem>
                   {
-                      allData.map((data,i) => (
+                      allData?.map((data,i) => (
                           <SelectItem key={i} value={data.title}>{data.title}</SelectItem>
                       ))
                   }
