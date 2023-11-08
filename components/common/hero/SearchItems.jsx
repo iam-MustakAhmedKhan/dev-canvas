@@ -3,7 +3,7 @@ import React from 'react';
 import useStore from '@/state/store';
 import { useAllData } from '@/hooks/useAllData';
 import { Card } from '../Card';
-import NotFound from '../notfound';
+import NotFound from '../NotFound';
 
 const SearchItems = () => {
     const filterValue = useStore((state) => state.filterValue);
