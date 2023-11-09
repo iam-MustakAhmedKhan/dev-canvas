@@ -11,11 +11,9 @@ import { getSubcategory } from '@/utils/getSubcategory';
 const HomeItems = () => {
 
   const { category } = useParams();
-  const { title, icon } = getSingleData(category);
+  const { title, icon,content } = getSingleData(category);
   const contentFilter = useStore((state) => state.contentFilter);
   const setContentFilter = useStore((state) => state.setContentFilter);
-
-  const { content } = getSingleData(category)
   const contents=getSubcategory(content)
 
   const handleChange = (value) => {
@@ -48,7 +46,7 @@ const HomeItems = () => {
         </SelectContent>
       </Select>
       <div>
-        <CardItems contentFilter={contentFilter} filename={category} />
+        <CardItems contentFilter={contentFilter} fileData={content} filename={category} />
       </div>
 
     </div>

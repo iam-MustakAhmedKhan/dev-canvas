@@ -1,12 +1,12 @@
 
-import { getSingleData, organizeData } from '@/utils';
+import {organizeData } from '@/utils';
 import { sort } from '@/utils/sort';
 import { Card } from './common/Card';
 
 
-const CardItems = ({ filename, contentFilter }) => {
-    const data = getSingleData(filename);
-    const organized = organizeData(sort(data.content));
+const CardItems = ({filename, fileData, contentFilter }) => {
+    const data = fileData;
+    const organized = organizeData(sort(data));
 
 
     const contentF = (value) => {
