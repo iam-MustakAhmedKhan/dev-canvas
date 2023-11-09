@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
           storageKey="devCanvasTheme"
         >
-          {/* <NextTopLoader /> */}
+          <NextTopLoader />
           <div className="container mx-auto">
             <Header />
             {children}
