@@ -1,14 +1,13 @@
 "use client"
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
-import React from 'react';
 
 import useStore from '@/state/store';
 import { useEffect } from 'react';
 import { SearchItems } from './SearchItems';
 
 
-const SearchBox = () => {
+const SearchBox = ({allData}) => {
   const active = useStore((state) => state.isActive)
   const searchValue = useStore((state) => state.searchValue)
   const setActive = useStore((state) => state.setActive)
@@ -50,7 +49,7 @@ const SearchBox = () => {
 
       {
         active && <div className='absolute  left-0 w-full bg-[#ffffff] px-3 py-4 rounded-b-[6px] z-30'>
-          <SearchItems />
+          <SearchItems allData={allData} />
         </div>
       }
     </div>

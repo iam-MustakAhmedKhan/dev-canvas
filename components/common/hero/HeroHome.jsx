@@ -7,7 +7,7 @@ import { Description } from "../Description";
 import { SelectInput } from "../SelectInput";
 
 
-const HeroHome = ({ contributors, title, description, icon }) => {
+const HeroHome = ({ contributors, title, description, icon, allData }) => {
   return (
     <main className="py-[136px]">
       <div className="flex flex-col items-center justify-center">
@@ -21,8 +21,8 @@ const HeroHome = ({ contributors, title, description, icon }) => {
           :
           <>
             <div className="flex items-center gap-3 py-8">
-              <SearchBox />
-              <SelectInput />
+              <SearchBox allData={allData} />
+              <SelectInput allData={allData} />
             </div>
             <h1 className="font-bold">Trending: <span className="font-normal">Javascipt,React js,Linkedin</span></h1>
           </>}

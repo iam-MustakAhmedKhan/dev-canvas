@@ -8,14 +8,9 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { useAllData } from "@/hooks/useAllData";
 import useStore from "@/state/store";
-const SelectInput = () => {
-
+const SelectInput = ({allData}) => {
     const setFilterValue = useStore((state) => state.setFilterValue)
-    const allData=useAllData()
-
-    
     const handleSelect = (value) => {
         setFilterValue(value)
     }

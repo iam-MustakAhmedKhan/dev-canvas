@@ -1,7 +1,6 @@
 
 
 import HomeItems from '@/components/HomeItems';
-import React from 'react';
 
 
 

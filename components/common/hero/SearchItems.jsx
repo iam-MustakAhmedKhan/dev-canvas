@@ -1,14 +1,12 @@
 "use client";
-import React from 'react';
 import useStore from '@/state/store';
-import { useAllData } from '@/hooks/useAllData';
 import { Card } from '../Card';
 import NotFoundItems from '../NotFoundItems';
 
-const SearchItems = () => {
+const SearchItems = ({allData}) => {
     const filterValue = useStore((state) => state.filterValue);
     const searchValue = useStore((state) => state.searchValue);
-    const allData = useAllData();
+
 
     const SearchFilter = (value) => {
         const name = value.name.trim().toLowerCase();

@@ -2,7 +2,6 @@
 import { contributor } from '@/utils/contributors';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { useCallback } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';

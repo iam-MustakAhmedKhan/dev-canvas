@@ -1,7 +1,6 @@
 
 import { getSingleData, organizeData } from '@/utils';
 import { sort } from '@/utils/sort';
-import React from 'react';
 import { Card } from './common/Card';
 
 
