@@ -1,10 +1,7 @@
-'use client'
-import Link from "next/link";
-
+"use client"
+import Link from "next/link"
 
 const Logo = ({ bg, text, subTextColor }) => {
-
-
   return (
     <Link
       href="/"

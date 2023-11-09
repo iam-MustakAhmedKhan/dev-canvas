@@ -3,7 +3,7 @@ import "./globals.css"
 import ThemeProvider from "@/components/providers/theme-provider"
 import NextTopLoader from "nextjs-toploader"
 import Footer from "@/components/Footer"
-import { Header } from "@/components/Header";
+import { Header } from "@/components/Header"
 
 const inter = Inter({ subsets: ["latin"] })
 
