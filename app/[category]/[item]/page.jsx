@@ -1,10 +1,9 @@
-import Items from "@/components/Items";
-
+import Items from "@/components/Items"
 
 const ItemPage = () => {
   return (
     <div>
-      <Items/>
+      <Items />
     </div>
   )
 }

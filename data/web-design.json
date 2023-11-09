@@ -1,38 +1,35 @@
 {
-    "id": "web-design",
-    "title": "Web Design",
-    "slug": "web-design",
-    "icon": "https://i.ibb.co/4p7ZhKV/webdevelopment.png",
-    "content": [
-        
-        {
-            "name": "Icons8",
-            "slug": "icons8",
-            "logo": "https://i.ibb.co/9rYgrRJ/icons8.png",
-            "link": "https://icons8.com/",
-            "description": "Icons8 is an online platform that offers an extensive collection of high-quality icons and design assets for designers, developers, and creatives. It provides a diverse selection of icons in various styles, sizes, and formats, making it a valuable resource for web and app designers, as well as anyone in need of graphical elements for their projects-.",
-            "category": "Web Design",
-            "subCategory": "icon"
-        },
-        {
-            "name": "Font Awesome",
-            "slug": "font-awesome",
-            "logo": "https://i.ibb.co/02sNqsn/fontawesome.png",
-            "link": "https://fontawesome.com/",
-            "description": "FontAwesome is a popular and widely used icon set and toolkit for web developers and designers. It provides a comprehensive collection of scalable vector icons that can be easily customized and integrated into web projects, making it a valuable resource for creating visually appealing and user-friendly websites and applications.",
-            "category": "Web Design",
-            "subCategory": "icon"
-        }
-        ,
-        {
-            "name": "ui",
-            "slug": "font-awesome",
-            "logo": "https://i.ibb.co/02sNqsn/fontawesome.png",
-            "link": "https://fontawesome.com/",
-            "description": "FontAwesome is a popular and widely used icon set and toolkit for web developers and designers. It provides a comprehensive collection of scalable vector icons that can be easily customized and integrated into web projects, making it a valuable resource for creating visually appealing and user-friendly websites and applications.",
-            "category": "Web Design",
-            "subCategory": "ui"
-        }
-        
-    ]
+  "id": "web-design",
+  "title": "Web Design",
+  "slug": "web-design",
+  "icon": "https://i.ibb.co/4p7ZhKV/webdevelopment.png",
+  "content": [
+    {
+      "name": "Icons8",
+      "slug": "icons8",
+      "logo": "https://i.ibb.co/9rYgrRJ/icons8.png",
+      "link": "https://icons8.com/",
+      "description": "Icons8 is an online platform that offers an extensive collection of high-quality icons and design assets for designers, developers, and creatives. It provides a diverse selection of icons in various styles, sizes, and formats, making it a valuable resource for web and app designers, as well as anyone in need of graphical elements for their projects-.",
+      "category": "Web Design",
+      "subCategory": "icon"
+    },
+    {
+      "name": "Font Awesome",
+      "slug": "font-awesome",
+      "logo": "https://i.ibb.co/02sNqsn/fontawesome.png",
+      "link": "https://fontawesome.com/",
+      "description": "FontAwesome is a popular and widely used icon set and toolkit for web developers and designers. It provides a comprehensive collection of scalable vector icons that can be easily customized and integrated into web projects, making it a valuable resource for creating visually appealing and user-friendly websites and applications.",
+      "category": "Web Design",
+      "subCategory": "icon"
+    },
+    {
+      "name": "ui",
+      "slug": "font-awesome",
+      "logo": "https://i.ibb.co/02sNqsn/fontawesome.png",
+      "link": "https://fontawesome.com/",
+      "description": "FontAwesome is a popular and widely used icon set and toolkit for web developers and designers. It provides a comprehensive collection of scalable vector icons that can be easily customized and integrated into web projects, making it a valuable resource for creating visually appealing and user-friendly websites and applications.",
+      "category": "Web Design",
+      "subCategory": "ui"
+    }
+  ]
 }

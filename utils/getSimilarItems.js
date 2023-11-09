@@ -1,18 +1,16 @@
-const { getSingleData } = require("./getSingleData");
+const { getSingleData } = require("./getSingleData")
 
-const getSimilarItems = (fileName, subCategory,name) => {
-    const { content } = getSingleData(fileName)
-    let data = []
+const getSimilarItems = (fileName, subCategory, name) => {
+  const { content } = getSingleData(fileName)
+  let data = []
 
-    
-    content.find(c => {
-        if (c.subCategory === subCategory && c.name !== name) {
-            data.push(c)
-        }
-    })
+  content.find((c) => {
+    if (c.subCategory === subCategory && c.name !== name) {
+      data.push(c)
+    }
+  })
 
-    return data
+  return data
+}
 
-};
-
-export {getSimilarItems}
+export { getSimilarItems }

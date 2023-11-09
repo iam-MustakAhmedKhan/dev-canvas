@@ -1,17 +1,15 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import ThemeProvider from '@/components/providers/theme-provider';
-import NextTopLoader from 'nextjs-toploader';
-import Footer from '@/components/Footer';
-import { Header } from '@/components/Header';
+import { Inter } from "next/font/google"
+import "./globals.css"
+import ThemeProvider from "@/components/providers/theme-provider"
+import NextTopLoader from "nextjs-toploader"
+import Footer from "@/components/Footer"
+import { Header } from "@/components/Header"
 
-
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: 'Dev Canvas',
-  description: 'Find the resource that you need',
+  title: "Dev Canvas",
+  description: "Find the resource that you need",
 }
 
 export default function RootLayout({ children }) {
@@ -26,11 +24,11 @@ export default function RootLayout({ children }) {
           storageKey="devCanvasTheme"
         >
           <NextTopLoader />
-          <div className='container mx-auto'>
-            <Header/>
+          <div className="container mx-auto">
+            <Header />
             {children}
           </div>
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

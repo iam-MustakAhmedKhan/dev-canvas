@@ -1,16 +1,11 @@
-
-
-import HomeItems from '@/components/HomeItems';
-
-
+import HomeItems from "@/components/HomeItems"
 
 const CategoryPage = () => {
+  return (
+    <div>
+      <HomeItems />
+    </div>
+  )
+}
 
-    return (
-        <div >
-            <HomeItems />
-        </div>
-    );
-};
-
-export default CategoryPage;
+export default CategoryPage

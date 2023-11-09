@@ -1,5 +1,4 @@
-
 export const getSingleData = (filename) => {
-    const filePath = require(`../data/${filename}`);
-    return filePath;
-};
+  const filePath = require(`../data/${filename}`)
+  return filePath
+}
