@@ -5,7 +5,7 @@ const Description = ({ title, description, icon }) => {
     <div className="flex flex-col items-center justify-center">
       <div className={`rounded-md p-2`}>
         <Image
-          src={icon ?? "/homePageIcon.png"}
+          src={icon ?? "/app/homePageIcon.png"}
           alt="icon"
           width={120}
           height={120}
