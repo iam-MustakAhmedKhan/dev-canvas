@@ -1,39 +1,19 @@
-"use client"
 import { Logo } from "./common/Logo"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { FileEdit, Github, Star } from "lucide-react"
 import { ModeToggle } from "./common/ThemeToggle"
-import { useParams } from "next/navigation"
+import LinkPage from "./LinkPage";
+import { Star } from "lucide-react";
 
 const Header = () => {
-  const { category } = useParams()
 
   return (
     <nav className="flex items-center justify-between py-5 sticky top-0 bg-[#ffffff] dark:bg-[#020817] z-50">
       <Logo />
       <div className="flex items-center gap-4">
-        <Button asChild>
-          {category ? (
-            <Link
-              href={`https://github.com/iam-MustakAhmedKhan/dev-canvas/blob/main/data/${category}.json`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FileEdit width={20} height={20} />
-              <span className="ml-2">Edit This Page</span>
-            </Link>
-          ) : (
-            <Link
-              href="https://github.com/iam-MustakAhmedKhan/dev-canvas"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github />
-              <span className="ml-2">Contribute</span>
-            </Link>
-          )}
-        </Button>
+        
+         <LinkPage/>
+        
         <Button asChild variant="ghost">
           <Link
             href="https://github.com/iam-MustakAhmedKhan/dev-canvas"
